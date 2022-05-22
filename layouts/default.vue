@@ -41,6 +41,7 @@
         <v-icon>mdi-menu</v-icon>
       </v-btn>
     </v-app-bar>
+    <!-- <v-main style="overflow: revert;"> -->
     <v-main>
       <v-container>
         <Nuxt />
@@ -56,7 +57,8 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
-    <v-footer :absolute="!fixed" app>
+    <!-- <v-footer :absolute="!fixed" app> -->
+    <v-footer app>
       <span>&copy; {{ new Date().getFullYear() }}</span>
     </v-footer>
   </v-app>
@@ -80,6 +82,26 @@ export default {
           icon: 'mdi-chart-bubble',
           title: 'Inspire',
           to: '/inspire',
+        },
+        {
+          icon: 'mdi-chart-bubble',
+          title: 'GrandMenu',
+          to: '/GrandMenu',
+        },
+        {
+          icon: 'mdi-chart-bubble',
+          title: 'AboutJackBurger',
+          to: '/AboutJackBurger',
+        },
+        {
+          icon: 'mdi-chart-bubble',
+          title: 'YouTube',
+          to: '/YouTube',
+        },
+        {
+          icon: 'mdi-chart-bubble',
+          title: 'MenuDetail',
+          to: '/MenuDetail',
         },
       ],
       miniVariant: false,
