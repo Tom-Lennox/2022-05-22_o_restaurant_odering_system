@@ -1,6 +1,7 @@
 
 export const state = () => ({
     counter: 1,
+    reactiveText: "test",
     burgers: [
         {
           BurgerName: '炭火焼きバーガー',
@@ -53,5 +54,8 @@ export const getters = {
     },
     getBurgers: (state) => {
         return state.burgers
+    },
+    getReactiveText: (state) => {
+      return state.reactiveText
     }
 }
