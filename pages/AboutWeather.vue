@@ -101,7 +101,7 @@
     </v-row>
     <v-row>
       <v-col>
-        <pre>{{burgers}}</pre>
+        <pre>{{ fetchSomething() }}</pre>
       </v-col>
     </v-row>
   </v-container>
@@ -110,6 +110,8 @@
 <script>
 // import Logo from '~/components/Logo.vue'
 import { mapGetters } from 'vuex'
+// import { ref, useFetch } from '@nuxtjs/composition-api'
+// import axios from 'axios'
 
 export default {
   components: {
@@ -128,9 +130,14 @@ export default {
     putComma(price) {
       return price.toLocaleString();
     },
+    async fetchSomething() {
+      const ip = await this.$axios.$get('http://icanhazip.com')
+      return ip
+    },
   },
   mounted() {
-    console.log(this.burgers)
+    // console.log(this.burgers)
+		
   },
   data: () => ({
     CarouselItems: [

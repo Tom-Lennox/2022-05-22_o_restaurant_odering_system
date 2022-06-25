@@ -103,6 +103,11 @@ export default {
           title: 'MenuDetail',
           to: '/MenuDetail',
         },
+        {
+          icon: 'mdi-chart-bubble',
+          title: 'AboutWeather',
+          to: '/AboutWeather',
+        },
       ],
       miniVariant: false,
       right: true,
