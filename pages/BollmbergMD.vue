@@ -17,8 +17,8 @@
     </v-row>
     <v-row>
       <v-col class="text-center">
-        <pre>{{ $data }}</pre>
-        <pre><!-- {{state}} --></pre>
+        <!-- <pre>{{ $data }}</pre> -->
+        <pre>{{state}}</pre>
       </v-col>
     </v-row>
   </div>
@@ -127,8 +127,8 @@ Start numbering with offset:
 </script>
 
 <style lang="scss" scoped>
-::v-deep h1 {
-  color: red;
-  font-size: 
-}
+// ::v-deep h1 {
+//   color: red;
+//   font-size: 
+// }
 </style>

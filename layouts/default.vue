@@ -108,6 +108,11 @@ export default {
           title: 'AboutWeather',
           to: '/AboutWeather',
         },
+        {
+          icon: 'mdi-chart-bubble',
+          title: 'BollmbergMD',
+          to: '/BollmbergMD',
+        },
       ],
       miniVariant: false,
       right: true,
